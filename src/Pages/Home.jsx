@@ -1,12 +1,25 @@
 import React from "react";
-import logo from '../assets/images/logo.jpeg'
+import { Col, Container, Row } from "react-bootstrap";
+import { Banner } from "../Components";
+import { ProductCard } from "../Components/ProductCard";
 
 export const Home = () => {
   return (
-    <div className="container-lg">
-      <div>This is Home page</div>
-          <img src={logo} alt='Supreme Window London' />
-     
+    <div>
+      <Banner />
+      <Container>
+        <Row className="container">
+          <Col>
+            <ProductCard />
+          </Col>
+          <Col>
+            <ProductCard />
+          </Col>
+          <Col>
+            <ProductCard />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

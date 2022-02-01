@@ -16,20 +16,31 @@ export const Footer = () => {
               <hr />
               <div className="row">
                 <div className="col-md-6 py-3">
-                  <div className="h6 text-center font-weight-bold ">Options</div>
+                  <div className="h6 text-center font-weight-bold ">
+                    Options
+                  </div>
                   <ul className="list-group list-group-flush">
                     <li className="list-group-item bg-dark text-white border-light">
-                      <Link to={routes.upvc} className="text-decoration-none text-white stretched-link">
+                      <Link
+                        to={routes.upvc}
+                        className="text-decoration-none text-white stretched-link"
+                      >
                         uPVC
                       </Link>
                     </li>
                     <li className="list-group-item bg-dark text-white border-light">
-                      <Link to={routes.timber} className="text-decoration-none text-white stretched-link">
+                      <Link
+                        to={routes.timber}
+                        className="text-decoration-none text-white stretched-link"
+                      >
                         Timber
                       </Link>
                     </li>
                     <li className="list-group-item bg-dark text-white border-light">
-                      <Link to={routes.aluminium} className="text-decoration-none text-white stretched-link">
+                      <Link
+                        to={routes.aluminium}
+                        className="text-decoration-none text-white stretched-link"
+                      >
                         Aluminum
                       </Link>
                     </li>
@@ -40,22 +51,34 @@ export const Footer = () => {
                   <ul className="list-group list-group-flush">
                     {/* <hr /> */}
                     <li className="list-group-item bg-dark text-white border-light">
-                      <Link to={routes.casement} className="text-decoration-none text-white stretched-link">
+                      <Link
+                        to={routes.casement}
+                        className="text-decoration-none text-white stretched-link"
+                      >
                         Casement
                       </Link>
                     </li>
                     <li className="list-group-item bg-dark text-white border-light">
-                      <Link to={routes.sash} className="text-decoration-none text-white stretched-link">
+                      <Link
+                        to={routes.sash}
+                        className="text-decoration-none text-white stretched-link"
+                      >
                         Sash
                       </Link>
                     </li>
                     <li className="list-group-item bg-dark text-white border-light">
-                      <Link to={routes.secondary} className="text-decoration-none text-white stretched-link">
+                      <Link
+                        to={routes.secondary}
+                        className="text-decoration-none text-white stretched-link"
+                      >
                         Secondary
                       </Link>
                     </li>
                     <li className="list-group-item bg-dark text-white border-light">
-                      <Link to={routes.tiltnturm} className="text-decoration-none text-white stretched-link">
+                      <Link
+                        to={routes.tiltnturm}
+                        className="text-decoration-none text-white stretched-link"
+                      >
                         Tilt & Turn
                       </Link>
                     </li>
@@ -68,22 +91,34 @@ export const Footer = () => {
               <hr />
               <ul className="list-group list-group-flush">
                 <li className="list-group-item bg-dark text-white border-light">
-                  <Link to={routes.doors} className="text-decoration-none text-white stretched-link">
+                  <Link
+                    to={routes.doors}
+                    className="text-decoration-none text-white stretched-link"
+                  >
                     Main
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
-                  <Link to={routes.doors} className="text-decoration-none text-white stretched-link">
+                  <Link
+                    to={routes.doors}
+                    className="text-decoration-none text-white stretched-link"
+                  >
                     Living Room
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
-                  <Link to={routes.doors} className="text-decoration-none text-white stretched-link">
+                  <Link
+                    to={routes.doors}
+                    className="text-decoration-none text-white stretched-link"
+                  >
                     Furniture
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
-                  <Link to={routes.doors} className="text-decoration-none text-white stretched-link">
+                  <Link
+                    to={routes.doors}
+                    className="text-decoration-none text-white stretched-link"
+                  >
                     Lightweight Tiled
                   </Link>
                 </li>
@@ -94,22 +129,34 @@ export const Footer = () => {
               <hr />
               <ul className="list-group list-group-flush">
                 <li className="list-group-item bg-dark text-white border-light">
-                  <Link to={routes.conservatories} className="text-decoration-none text-white stretched-link">
+                  <Link
+                    to={routes.conservatories}
+                    className="text-decoration-none text-white stretched-link"
+                  >
                     Main
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
-                  <Link to={routes.conservatories} className="text-decoration-none text-white stretched-link">
+                  <Link
+                    to={routes.conservatories}
+                    className="text-decoration-none text-white stretched-link"
+                  >
                     Living Room
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
-                  <Link to={routes.conservatories} className="text-decoration-none text-white stretched-link">
+                  <Link
+                    to={routes.conservatories}
+                    className="text-decoration-none text-white stretched-link"
+                  >
                     Furniture
                   </Link>
                 </li>
                 <li className="list-group-item bg-dark text-white border-light">
-                  <Link to={routes.conservatories} className="text-decoration-none text-white stretched-link">
+                  <Link
+                    to={routes.conservatories}
+                    className="text-decoration-none text-white stretched-link"
+                  >
                     Lightweight Tiled
                   </Link>
                 </li>
@@ -123,7 +170,7 @@ export const Footer = () => {
               <IconTelephone /> +1800 100 1000
             </div>
             <div className="col display-6">
-              <IconEnvelope /> info@supremewindowlondon.com
+              <IconEnvelope /> info@supremewindow.com
             </div>
           </div>
         </div>

@@ -12,7 +12,13 @@ export const NavBar = () => {
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} width="40" height="40" className="d-inline-block align-top" alt="" />
+          <img
+            src={logo}
+            width="40"
+            height="40"
+            className="d-inline-block align-top"
+            alt=""
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -26,16 +32,24 @@ export const NavBar = () => {
               {/* FIXME: SET HEADING STYLE */}
               <NavDropdown.Item href={routes.upvc}>uPVC</NavDropdown.Item>
               <NavDropdown.Item href={routes.timber}>Timber</NavDropdown.Item>
-              <NavDropdown.Item href={routes.aluminium}>Aluminium</NavDropdown.Item>
+              <NavDropdown.Item href={routes.aluminium}>
+                Aluminium
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <div className="text-center h5">Styles</div>
               <hr />
               {/* FIXME: SET HEADING STYLE */}
               <NavDropdown.Item href="">Styles</NavDropdown.Item>
-              <NavDropdown.Item href={routes.casement}>Casement</NavDropdown.Item>
+              <NavDropdown.Item href={routes.casement}>
+                Casement
+              </NavDropdown.Item>
               <NavDropdown.Item href={routes.sash}>Sash</NavDropdown.Item>
-              <NavDropdown.Item href={routes.secondary}>Secondary</NavDropdown.Item>
-              <NavDropdown.Item href={routes.tiltnturm}>Tilt & Turn</NavDropdown.Item>
+              <NavDropdown.Item href={routes.secondary}>
+                Secondary
+              </NavDropdown.Item>
+              <NavDropdown.Item href={routes.tiltnturm}>
+                Tilt & Turn
+              </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href={routes.doors}>DOORS</Nav.Link>
             <Nav.Link href={routes.conservatories}>CONSERVATORIES</Nav.Link>

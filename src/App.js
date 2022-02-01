@@ -1,4 +1,4 @@
-import React, { lazy, useCallback } from "react";
+import React from "react";
 import "./App.css";
 import { Footer, NavBar } from "./Components";
 import {
