@@ -32,12 +32,12 @@ jobs:
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           git-ftp-args: --insecure
 
-      - name: 📽 Commande SSH de 1&1 by Ionos
-        uses: garygrossgarten/github-action-ssh@release
-        with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          # command: |
-          #   curl -sS https://getcomposer.org/installer | /usr/bin/php7.4 -cli
-          #   /usr/bin/php7.4 -cli composer.phar update
+      # - name: 📽 Commande SSH de 1&1 by Ionos
+      #   uses: garygrossgarten/github-action-ssh@release
+      #   with:
+      #     host: ${{ secrets.FTP_HOST }}
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      # command: |
+      #   curl -sS https://getcomposer.org/installer | /usr/bin/php7.4 -cli
+      #   /usr/bin/php7.4 -cli composer.phar update
