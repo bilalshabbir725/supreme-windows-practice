@@ -17,6 +17,6 @@ jobs:
         with:
           server: access858581656.webspace-data.io
           username: u103584624
-          password: ${{ secrets.password }}
+          password: ${{ secrets.IONOS_SFTP_PASSWORD_TEST }}
           protocol: ftps
           port: 22 # todo replace with your web hosts ftps port
