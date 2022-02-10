@@ -4,7 +4,7 @@ import { images } from "../assets/images";
 
 export const ProductCard = () => {
   return (
-    <Card style={{ width: "18rem", marginVertical: 50 }} className="m-4">
+    <Card style={{ width: "18rem " }} className=" card m-1">
       <Card.Img variant="top" src={images.logo} />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>

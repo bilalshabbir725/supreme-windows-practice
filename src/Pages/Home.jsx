@@ -7,19 +7,25 @@ export const Home = () => {
   return (
     <div>
       <Banner />
-      <Container>
-        <Row className="container">
-          <Col>
+      <div className="mt-5 mb-5 container-fluid">
+        <Row>
+          <Col className="d-flex justify-content-around">
             <ProductCard />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-around">
             <ProductCard />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-around">
+            <ProductCard />
+          </Col>
+          <Col className="d-flex justify-content-around">
+            <ProductCard />
+          </Col>
+          <Col className="d-flex justify-content-around">
             <ProductCard />
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 };
