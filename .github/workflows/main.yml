@@ -9,17 +9,35 @@ jobs:
     name: 🎉 FTPS-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v2
-        with:
-          lfs: true
-          fetch-depth: 100
+      # - name: 🚚 Get latest code
+      #   uses: actions/checkout@v2
+      #   with:
+      #     lfs: true
+      #     fetch-depth: 100
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      # - name: 📂 Sync files
+      #   uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      #   with:
+      #     server: access858581656.webspace-data.io
+      #     username: u103584624
+      #     password: ${{ secrets.IONOS_SFTP_PASSWORD_TEST }}
+      #     # protocol: ftps
+      #     port: 22
+
+      - name: 📂 Synchronisation des fichiers
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          server: access858581656.webspace-data.io
-          username: u103584624
-          password: ${{ secrets.IONOS_SFTP_PASSWORD_TEST }}
-          # protocol: ftps
-          port: 22
+          ftp-server: sftp://${{ secrets.FTP_HOST }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          git-ftp-args: --insecure
+
+      - name: 📽 Commande SSH de 1&1 by Ionos
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          command: |
+            curl -sS https://getcomposer.org/installer | /usr/bin/php7.4 -cli
+            /usr/bin/php7.4 -cli composer.phar update
