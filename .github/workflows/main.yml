@@ -27,13 +27,13 @@ jobs:
       - name: 📂 Synchronisation des fichiers
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
-          # ftp-server: sftp://${{ secrets.FTP_HOST }}
-          # ftp-username: ${{ secrets.FTP_USERNAME }}
-          # ftp-password: ${{ secrets.FTP_PASSWORD }}
-          # git-ftp-args: --insecure
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          ftp-server: sftp://${{ secrets.FTP_HOST }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          git-ftp-args: --insecure
+          # server: ${{ secrets.FTP_HOST }}
+          # username: ${{ secrets.FTP_USERNAME }}
+          # password: ${{ secrets.FTP_PASSWORD }}
           port: 22
 
       # - name: 📽 Commande SSH de 1&1 by Ionos
